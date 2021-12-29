@@ -1,0 +1,14 @@
+[Unit]
+Description=My messanger service
+After=network.target remote-fs.target nss-lookup.target
+
+[Service]
+EnvironmentFile=/etc/.progconf
+ExecStart=/home/pi/Documents/Code/fordebug3/server $ARG1
+ExecStop=/bin/kill -WINCH ${MAINPID}
+KillSignal=SIGTERM
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
+pi@raspberrypi:/usr/lib/sys
