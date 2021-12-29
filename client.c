@@ -12,7 +12,7 @@
 #include <time.h>
 #include <strings.h>
 
-#include "include/common.h"
+#include "./common.h"
 
 
 pthread_mutex_t clients_mutex = PTHREAD_MUTEX_INITIALIZER;

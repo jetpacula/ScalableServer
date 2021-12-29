@@ -21,7 +21,7 @@
 #include <netdb.h>
 #include <pthread.h>
 #include <arpa/inet.h>
-#include "include/common.h"
+#include "./common.h"
 //#include "include/common.h"
 #define __STDC_LIMIT_MACROS
 #include <assert.h>
